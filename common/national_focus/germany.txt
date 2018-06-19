@@ -14,6 +14,7 @@ default = no
 
 #Custom focuses start here
 #Focus for I think it's fixed now... 
+<<<<<<< HEAD
 	focus = { 
 		id = ithinkitsfixednow 
 		icon = GFX_goal_generic_propaganda 
@@ -25,10 +26,25 @@ prerequisite = { focus = finalstagereichsautobahnxvolkscomputer}
 cost = 10  
 available_if_capitulated = yes  
 }#Focus for Fixing Heydrich's Mess 
+=======
+		focus = { 
+		id = ithinkitsfixednow 
+		icon = GFX_goal_generic_propaganda 
+		ai_will_do = { factor = 45} 
+ x =1 
+ y =8 
+ mutually_exclusive = { } 
+ prerequisite = { focus = finalstagereichsautobahnxvolkscomputer} 
+ cost = 10  
+  available_if_capitulated = yes
+ }
+ #Focus for Fixing Heydrich's Mess 
+>>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
 		focus = { 
 		id = fixingheydrichsmess 
 		icon = GFX_focus_generic_anti_fascist_diplomacy 
 		ai_will_do = { factor = 45} 
+<<<<<<< HEAD
         x =1 
         y =0 
 mutually_exclusive = { } 
@@ -36,6 +52,16 @@ prerequisite = { }
 cost = 5  
 available_if_capitulated = yes  
 }#Focus for Odin's Spear 
+=======
+ x =1 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ cost = 5  
+  available_if_capitulated = yes  
+ }
+ #Focus for Odin's Spear 
+>>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
 		focus = { 
 		id = odinsspear 
 		icon = GFX_focus_generic_strike_at_democracy1 
@@ -51,7 +77,11 @@ available_if_capitulated = yes
  completion_reward = { 
  add_ideas = GER_building_the_gungnir 
  } 
+<<<<<<< HEAD
 }#Focus for The economy, fools! 
+=======
+ }#Focus for The economy, fools! 
+>>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
 		focus = { 
 		id = theeconomyfools 
 		icon = GFX_goal_generic_consumer_goods 
@@ -78,12 +108,19 @@ available_if_capitulated = yes
  cost = 15  
   available_if_capitulated = yes  
  completion_reward = { 
+<<<<<<< HEAD
  set_technology = { gungnir_rod = 1 } 
  	 
  	 
   
  } 
  }#Focus for Krupp-Rheinmetall Mittelwerk 
+=======
+ set_technology = { gungnir_rod = 1 }  
+
+ }
+ #Focus for Krupp-Rheinmetall Mittelwerk 
+>>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
 		focus = { 
 		id = krupprheinmetallmittelwerk 
 		icon = GFX_goal_generic_construct_mil_factory 
