@@ -1,43 +1,47 @@
 focus_tree = {
 id = 'germany'
+
 country = {
-factor=0
-modifier = {
-add = 10
-tag = GER
+    factor=0
+     
+    modifier = {
+        add = 10
+        tag = GER
+    }
 }
-}
+
 default = no
+
 #Custom focuses start here
 #Focus for I think it's fixed now... 
-		focus = { 
+	focus = { 
 		id = ithinkitsfixednow 
 		icon = GFX_goal_generic_propaganda 
 		ai_will_do = { factor = 45} 
- x =1 
- y =8 
- mutually_exclusive = { } 
- prerequisite = { focus = finalstagereichsautobahnxvolkscomputer} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Fixing Heydrich's Mess 
+        x =1 
+        y =8 
+mutually_exclusive = { } 
+prerequisite = { focus = finalstagereichsautobahnxvolkscomputer} 
+cost = 10  
+available_if_capitulated = yes  
+}#Focus for Fixing Heydrich's Mess 
 		focus = { 
 		id = fixingheydrichsmess 
 		icon = GFX_focus_generic_anti_fascist_diplomacy 
 		ai_will_do = { factor = 45} 
- x =1 
- y =0 
- mutually_exclusive = { } 
- prerequisite = { } 
- cost = 5  
-  available_if_capitulated = yes  
- }#Focus for Odin's Spear 
+        x =1 
+        y =0 
+mutually_exclusive = { } 
+prerequisite = { } 
+cost = 5  
+available_if_capitulated = yes  
+}#Focus for Odin's Spear 
 		focus = { 
 		id = odinsspear 
 		icon = GFX_focus_generic_strike_at_democracy1 
 		ai_will_do = { factor = 45} 
- x =6 
- y =0 
+        x =6 
+        y =0 
  mutually_exclusive = { } 
  prerequisite = { } 
  available = { USA = { has_completed_focus = USA_oasis } 
@@ -47,7 +51,7 @@ default = no
  completion_reward = { 
  add_ideas = GER_building_the_gungnir 
  } 
- }#Focus for The economy, fools! 
+}#Focus for The economy, fools! 
 		focus = { 
 		id = theeconomyfools 
 		icon = GFX_goal_generic_consumer_goods 
