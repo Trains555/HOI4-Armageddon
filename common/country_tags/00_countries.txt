@@ -114,4 +114,6 @@ MAN = "countries/Manchukou.txt"
 GKN = "countries/Nowgorodien.txt"
 GKT = "countries/Tula.txt"
 GKM = "countries/Moskowien.txt"
+GKM = "countries/Moskowien.txt"
+RKK = "countries/Kaukasus.txt"
 
