@@ -543,3 +543,8 @@ GKT = {
     color = rgb { 100 100 100 }
     color_ui = rgb { 100 100 100 }
 }
+
+GKK = {
+color = rgb { 100 100 100 }
+color_ui = rgb { 100 100 100 }
+}

@@ -1412,4 +1412,16 @@
  FACTION_NAME_NONALIGNED_3:0 "The $CONTINENT$ Alliance"
  FACTION_NAME_NONALIGNED_4:0 "Confederate $CONTINENT_ADJ$ Nations"
  FACTION_NAME_NONALIGNED_5:0 "The $LEADER_COUNTRY$ Coalition"
- 
+  GKK_democratic:0 "Cossack Republic"
+ GKK_democratic_DEF:0 "Cossack Republic"
+ GKK_democratic_ADJ:0 "Volga-German"
+ GKK_communism:0 "Cossack Commune"
+ GKK_communism_DEF:0 "Cossack Commune"
+ GKK_communism_ADJ:0 "Volga-German"
+ GKK_fascism:0 "Generalkomissariat Kosakenstadt"
+ GKK_fascism_DEF:0 "Generalkomissariat Kosakenstadt"
+ GKK_fascism_ADJ:0 "Volga-German"
+ GKK_neutrality:0 "Generalkomissariat Kosakenstadt"
+ GKK_neutrality_DEF:0 "Generalkomissariat Kosakenstadt"
+ GKK_neutrality_ADJ:0 "Volga-German"
+
