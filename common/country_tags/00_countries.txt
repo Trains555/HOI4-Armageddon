@@ -127,3 +127,4 @@ GKM = "countries/Moskowien.txt"
 
 
 GKK = "countries/Generalkomissariat Kosakenstadt.txt"
+OSP = "countries/SS Palestine.txt"
