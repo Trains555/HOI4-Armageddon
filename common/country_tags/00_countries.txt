@@ -128,3 +128,8 @@ GKM = "countries/Moskowien.txt"
 
 GKK = "countries/Generalkomissariat Kosakenstadt.txt"
 OSP = "countries/SS Palestine.txt"
+DAG = "countries/Dagestan.txt"
+CHE = "countries/Chechnya.txt"
+CHE = "countries/Chechnya.txt"
+CHE = "countries/Chechnya.txt"
+CBR = "countries/Communist Brazil.txt"

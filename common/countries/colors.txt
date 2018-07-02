@@ -552,3 +552,23 @@ OSP = {
 color = rgb { 100 100 100 }
 color_ui = rgb { 100 100 100 }
 }
+DAG = {
+color = rgb { 0 0 128 }
+color_ui = rgb { 0 0 128 }
+}
+CHE = {
+color = rgb { 0 64 0 }
+color_ui = rgb { 0 64 0 }
+}
+CHE = {
+color = rgb { 0 64 0 }
+color_ui = rgb { 0 64 0 }
+}
+CHE = {
+color = rgb { 0 64 0 }
+color_ui = rgb { 0 64 0 }
+}
+CBR = {
+color = rgb { 128 6 0 }
+color_ui = rgb { 128 6 0 }
+}
