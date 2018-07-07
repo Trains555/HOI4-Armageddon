@@ -113,6 +113,8 @@ BOT = "countries/Botswana.txt"
 MAN = "countries/Manchukou.txt"
 <<<<<<< HEAD:history/country_tags/00_countries.txt
 
+RKK = "countries/Kaukasus.txt"
+
 GKN = "countries/GK Nowgorodien.txt"
 
 GKT = "countries/GK Tula.txt"
