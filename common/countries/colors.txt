@@ -576,3 +576,11 @@ CBR = {
 color = rgb { 128 6 0 }
 color_ui = rgb { 128 6 0 }
 }
+OSN = {
+color = rgb { 75 75 77 }
+color_ui = rgb { 75 75 77 }
+}
+OSB = {
+color = rgb { 75 75 77 }
+color_ui = rgb { 75 75 77 }
+}
