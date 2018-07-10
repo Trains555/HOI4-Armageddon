@@ -584,3 +584,11 @@ OSB = {
 color = rgb { 75 75 77 }
 color_ui = rgb { 75 75 77 }
 }
+OSL = {
+color = rgb { 100 100 100 }
+color_ui = rgb { 100 100 100 }
+}
+OSK = {
+color = rgb { 100 100 100 }
+color_ui = rgb { 100 100 100 }
+}
