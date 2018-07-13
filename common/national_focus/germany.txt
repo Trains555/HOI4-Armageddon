@@ -1,362 +1,444 @@
 focus_tree = {
-id = 'germany'
+    id = 'germany'
 
-country = {
-    factor=0
-     
-    modifier = {
-        add = 10
-        tag = GER
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = GER
+        }
     }
-}
 
-default = no
+    default = no
 
 #Custom focuses start here
-#Focus for I think it's fixed now... 
-<<<<<<< HEAD
-	focus = { 
-		id = ithinkitsfixednow 
-		icon = GFX_goal_generic_propaganda 
-		ai_will_do = { factor = 45} 
-        x =1 
-        y =8 
-mutually_exclusive = { } 
-prerequisite = { focus = finalstagereichsautobahnxvolkscomputer} 
-cost = 10  
-available_if_capitulated = yes  
-}#Focus for Fixing Heydrich's Mess 
-=======
-		focus = { 
-		id = ithinkitsfixednow 
-		icon = GFX_goal_generic_propaganda 
-		ai_will_do = { factor = 45} 
- x =1 
- y =8 
- mutually_exclusive = { } 
- prerequisite = { focus = finalstagereichsautobahnxvolkscomputer} 
- cost = 10  
-  available_if_capitulated = yes
- }
- #Focus for Fixing Heydrich's Mess 
->>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
-		focus = { 
+#Focus for Fixing Heydrich's Mess 
+    focus = { 
 		id = fixingheydrichsmess 
 		icon = GFX_focus_generic_anti_fascist_diplomacy 
-		ai_will_do = { factor = 45} 
-<<<<<<< HEAD
-        x =1 
-        y =0 
-mutually_exclusive = { } 
-prerequisite = { } 
-cost = 5  
-available_if_capitulated = yes  
-}#Focus for Odin's Spear 
-=======
- x =1 
- y =0 
- mutually_exclusive = { } 
- prerequisite = { } 
- cost = 5  
-  available_if_capitulated = yes  
- }
+		ai_will_do = { 
+		    factor = 45
+        x = 1 
+        y = 0 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+
+
+
+ #Focus for Investigating Tannenbaum 
+    focus = { 
+		id = investigatingtannenbaum 
+		icon = GFX_focus_generic_military_mission 
+		ai_will_do = { 
+		    factor = 45 
+        x = 7 
+        y = 0 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+
  #Focus for Odin's Spear 
->>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
-		focus = { 
+	focus = { 
 		id = odinsspear 
 		icon = GFX_focus_generic_strike_at_democracy1 
 		ai_will_do = { factor = 45} 
-        x =6 
-        y =0 
- mutually_exclusive = { } 
- prerequisite = { } 
- available = { USA = { has_completed_focus = USA_oasis } 
- 						 } 
- cost = 15  
-  available_if_capitulated = yes  
- completion_reward = { 
- add_ideas = GER_building_the_gungnir 
- } 
-<<<<<<< HEAD
-}#Focus for The economy, fools! 
-=======
- }#Focus for The economy, fools! 
->>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
-		focus = { 
+        x = 12 
+        y = 0  
+        available = { USA = { has_completed_focus = USA_oasis }
+        cost = 15  
+        available_if_capitulated = yes  
+        }
+    }
+
+    completion_reward = { 
+        add_ideas = GER_building_the_gungnir 
+    }
+
+#Focus for The economy, fools! 
+	focus = { 
 		id = theeconomyfools 
 		icon = GFX_goal_generic_consumer_goods 
+		ai_will_do = { 
+		    factor = 45
+        x = 1 
+        y = 1 
+        prerequisite = { focus = fixingheydrichsmess} 
+        cost = 5  
+        available_if_capitulated = yes
+        }
+    }
+     
+	focus = { 
+		id = imcompetence 
+		icon = GFX_goal_generic_military_deal 
 		ai_will_do = { factor = 45} 
- x =1 
- y =1 
- mutually_exclusive = { } 
- prerequisite = { focus = fixingheydrichsmess} 
- cost = 5  
-  available_if_capitulated = yes  
- completion_reward = { 
- add_ideas	 
-  
- } 
- }#Focus for Rods from the Gods 
-		focus = { 
+        x = 4 
+        y = 1 
+        prerequisite = { focus = investigatingtannenbaum} 
+        cost = 5  
+        available_if_capitulated = yes
+        }
+    }
+
+ #Focus for Outdated Equipment 
+	focus = { 
+		id = outdatedequipment 
+		icon = GFX_goal_generic_small_arms 
+		ai_will_do = { factor = 45} 
+        x = 7 
+        y = 1 
+        prerequisite = { focus = investigatingtannenbaum} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+ #Focus for Foreign Involvement 
+	focus = { 
+		id = foreigninvolvement 
+		icon = GFX_focus_AST_war_japan 
+		ai_will_do = { factor = 45} 
+        x = 10 
+        y = 1 
+        prerequisite = { focus = investigatingtannenbaum} 
+        cost = 5  
+        available_if_capitulated = yes 
+        }
+    }
+ #Focus for Rods from the Gods 
+	focus = { 
 		id = rodsfromthegods 
 		icon = GFX_goal_generic_air_naval_bomber 
 		ai_will_do = { factor = 45} 
- x =6 
- y =1 
- mutually_exclusive = { } 
- prerequisite = { focus = odinsspear} 
- cost = 15  
-  available_if_capitulated = yes  
- completion_reward = { 
-<<<<<<< HEAD
- set_technology = { gungnir_rod = 1 } 
- 	 
- 	 
-  
- } 
- }#Focus for Krupp-Rheinmetall Mittelwerk 
-=======
- set_technology = { gungnir_rod = 1 }  
+        x = 12 
+        y = 1 
+        prerequisite = { focus = odinsspear} 
+        cost = 15  
+        available_if_capitulated = yes  
+        }
+    }
 
- }
+    completion_reward = { 
+        set_technology = { gungnir_rod = 1 } 
+ 	    }
+ 	} 
+ 
  #Focus for Krupp-Rheinmetall Mittelwerk 
->>>>>>> 698ac269e1637e34d7a616d39f958a181a8f262b
-		focus = { 
+	focus = { 
 		id = krupprheinmetallmittelwerk 
 		icon = GFX_goal_generic_construct_mil_factory 
 		ai_will_do = { factor = 45} 
- x =0 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = theeconomyfools} 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
- add_ideas = 
- 	 
-  
- } 
- }#Focus for Expanding the Autobahns 
-		focus = { 
+        x = 0 
+        y = 2 
+        prerequisite = { focus = theeconomyfools} 
+        cost = 10  
+        available_if_capitulated = yes  
+        } 
+    }
+
+ #Focus for Expanding the Autobahns 
+	focus = { 
 		id = expandingtheautobahns 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =1 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = theeconomyfools} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Better Social Welfare 
-		focus = { 
+        x = 1 
+        y = 2 
+        prerequisite = { focus = theeconomyfools} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }
+         
+ #Focus for Better Social Welfare 
+	focus = { 
 		id = bettersocialwelfare 
 		icon = GFX_goal_generic_improve_relations 
 		ai_will_do = { factor = 45} 
- x =2 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = theeconomyfools} 
- cost = 5  
-  available_if_capitulated = yes  
- }#Focus for Finishing God's Spear 
-		focus = { 
+        x = 2 
+        y = 2 
+        prerequisite = { focus = theeconomyfools} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+
+#Focus for The Old Veteran. 
+	focus = { 
+		id = theoldveteran 
+		icon = GFX_goal_continuous_armor_production 
+		ai_will_do = { factor = 45} 
+        x = 7 
+        y = 2  
+        prerequisite = { focus = outdatedequipment} 
+        cost = 5  
+        available_if_capitulated = yes
+        } 
+    } 
+#Focus for Finishing God's Spear 
+	focus = { 
 		id = finishinggodsspear 
 		icon = GFX_goal_generic_CAS 
 		ai_will_do = { factor = 45} 
- x =6 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = rodsfromthegods} 
- cost = 15  
-  available_if_capitulated = yes  
- completion_reward = { 
- remove_ideas = { GER_building_the_gungnir }  
- } 
- }#Focus for Krupp's 3-year Military Expansion Plan 
-		focus = { 
+        x = 12 
+        y = 2  
+        prerequisite = { focus = rodsfromthegods} 
+        cost = 15  
+        available_if_capitulated = yes  
+        }
+    }
+    completion_reward = { 
+        remove_ideas = { GER_building_the_gungnir }  
+        } 
+    }
+
+#Focus for Krupp's 3-year Military Expansion Plan 
+	focus = { 
 		id = krupps3yearmilitaryexpansionplan 
 		icon = GFX_krupps3yearmilitaryexpansionplan 
 		ai_will_do = { factor = 45} 
- x =0 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = krupprheinmetallmittelwerk} 
- cost = 5  
-  available_if_capitulated = yes  
- completion_reward = { 
- addadd_building_construction  = {  
-                                                          type = bunker  
- province = 5291  
- level = 2  
- instant_build = yes } 
- } 
- }#Focus for Reichsautobahn V 
-		focus = { 
+        x = 0 
+        y = 3 
+        prerequisite = { focus = krupprheinmetallmittelwerk} 
+        cost = 5  
+        available_if_capitulated = yes
+        }
+    }       
+    completion_reward = { 
+        add_building_construction  = {  
+            type = bunker  
+            province = 5291  
+            level = 2  
+            instant_build = yes 
+            } 
+        } 
+    }
+#Focus for Reichsautobahn V 
+	focus = { 
 		id = reichsautobahnv 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =1 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = expandingtheautobahns} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Increase unemployed purchasing power 
-		focus = { 
+        x = 1 
+        y = 3  
+        prerequisite = { focus = expandingtheautobahns} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+
+#Focus for Increase unemployed purchasing power 
+	focus = { 
 		id = increaseunemployedpurchasingpower 
 		icon = GFX_goal_generic_demand_territory 
 		ai_will_do = { factor = 45} 
- x =2 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = bettersocialwelfare} 
- cost = 5  
-  available_if_capitulated = yes  
- }#Focus for Divine Punishment... 
-		focus = { 
-		id = divinepunishment 
-		icon = GFX_focus_wonderweapons 
+        x = 2 
+        y = 3  
+        prerequisite = { focus = bettersocialwelfare} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+
+#Focus for The StG-96 
+	focus = { 
+		id = thestg96 
+		icon = GFX_goal_unknown 
 		ai_will_do = { factor = 45} 
- x =6 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = finishinggodsspear} 
- cost = 15  
-  available_if_capitulated = yes  
- completion_reward = { 
- add_ideas = { GER_gungnir }  
- } 
- }#Focus for 1st Stage 
+        x =6 
+        y =3 
+        prerequisite = { focus = theoldveteran} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+#Focus for The Leopard 
+	focus = { 
+		id = theleopard 
+		icon = GFX_goal_generic_army_tanks 
+		ai_will_do = { factor = 45} 
+        x = 7 
+        y = 3  
+        prerequisite = { focus = theoldveteran} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+#Focus for Gungnir 
+	focus = { 
+		id = gungnir 
+		icon = GFX_focus_generic_strike_at_democracy1 
+		ai_will_do = { factor = 45} 
+        x = 12 
+        y = 3 
+        prerequisite = { focus = finishinggodsspear} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for 1st Stage 
 		focus = { 
 		id = 1ststage 
 		icon = GFX_goal_generic_construction 
 		ai_will_do = { factor = 45} 
- x =0 
- y =4 
- mutually_exclusive = { } 
- prerequisite = { focus = krupps3yearmilitaryexpansionplan} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Reichsautobahn VI 
-		focus = { 
+        x = 0 
+        y = 4 
+        prerequisite = { focus = krupps3yearmilitaryexpansionplan} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }    
+#Focus for Reichsautobahn VI 
+	focus = { 
 		id = reichsautobahnvi 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =1 
- y =4 
- mutually_exclusive = { } 
- prerequisite = { focus = reichsautobahnv} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Free Healthcare and Education 
-		focus = { 
+        x = 1 
+        y = 4 
+        prerequisite = { focus = reichsautobahnv} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }
+#Focus for Free Healthcare and Education 
+	focus = { 
 		id = freehealthcareandeducation 
 		icon = GFX_goal_tripartite_pact 
 		ai_will_do = { factor = 45} 
- x =2 
- y =4 
- mutually_exclusive = { } 
- prerequisite = { focus = increaseunemployedpurchasingpower} 
- cost = 5  
-  available_if_capitulated = yes  
- }#Focus for 2nd Stage 
-		focus = { 
+        x = 2 
+        y = 4  
+        prerequisite = { focus = increaseunemployedpurchasingpower} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }
+#Focus for 2nd Stage 
+	focus = { 
 		id = 2ndstage 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =0 
- y =5 
- mutually_exclusive = { } 
- prerequisite = { focus = 1ststage} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Reichsautobahn VII 
-		focus = { 
+        x = 0 
+        y = 5  
+        prerequisite = { focus = 1ststage} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Reichsautobahn VII 
+	focus = { 
 		id = reichsautobahnvii 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =1 
- y =5 
- mutually_exclusive = { } 
- prerequisite = { focus = reichsautobahnvi} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Volkswagen II - Elektrik Boogaloo 
-		focus = { 
+        x = 1 
+        y = 5  
+        prerequisite = { focus = reichsautobahnvi} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Volkswagen II - Elektrik Boogaloo 
+	focus = { 
 		id = volkswageniielektrikboogaloo 
 		icon = GFX_focus_NZL_bob_semple_tank 
 		ai_will_do = { factor = 45} 
- x =2 
- y =5 
- mutually_exclusive = { } 
- prerequisite = { focus = freehealthcareandeducation} 
- cost = 5  
-  available_if_capitulated = yes  
- }#Focus for 3rd Stage 
-		focus = { 
+        x = 2 
+        y = 5  
+        prerequisite = { focus = freehealthcareandeducation} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for 3rd Stage 
+	focus = { 
 		id = 3rdstage 
 		icon = GFX_goal_generic_construct_civ_factory 
 		ai_will_do = { factor = 45} 
- x =0 
- y =6 
- mutually_exclusive = { } 
- prerequisite = { focus = 2ndstage} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Reichsautobahn IX 
-		focus = { 
+        x = 0 
+        y = 6 
+        mutually_exclusive = { } 
+        prerequisite = { focus = 2ndstage} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Reichsautobahn IX 
+	focus = { 
 		id = reichsautobahnix 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =1 
- y =6 
- mutually_exclusive = { } 
- prerequisite = { focus = reichsautobahnviii} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Veteran Subsidies 
-		focus = { 
+        x = 1 
+        y = 6 
+        mutually_exclusive = { } 
+        prerequisite = { focus = reichsautobahnviii} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Veteran Subsidies 
+	focus = { 
 		id = veteransubsidies 
 		icon = GFX_goal_rhineland 
 		ai_will_do = { factor = 45} 
- x =2 
- y =6 
- mutually_exclusive = { } 
- prerequisite = { focus = volkswageniielectricboogaloo} 
- cost = 5  
-  available_if_capitulated = yes  
- }#Focus for Final Stage 
-		focus = { 
+        x = 2 
+        y = 6 
+        mutually_exclusive = { } 
+        prerequisite = { focus = volkswageniielectricboogaloo} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Final Stage 
+	focus = { 
 		id = finalstage 
 		icon = GFX_goal_generic_construct_mil_factory 
 		ai_will_do = { factor = 45} 
- x =0 
- y =7 
- mutually_exclusive = { } 
- prerequisite = { focus = 3rdstage} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Reichsautobahn X 
-		focus = { 
+        x = 0 
+        y = 7 
+        mutually_exclusive = { } 
+        prerequisite = { focus = 3rdstage} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Reichsautobahn X 
+	focus = { 
 		id = reichsautobahnx 
 		icon = GFX_goal_generic_construct_infrastructure 
 		ai_will_do = { factor = 45} 
- x =1 
- y =7 
- mutually_exclusive = { } 
- prerequisite = { focus = reichsautobahnix} 
- cost = 10  
-  available_if_capitulated = yes  
- }#Focus for Volkscomputer 
-		focus = { 
+        x = 1 
+        y = 7 
+        mutually_exclusive = { } 
+        prerequisite = { focus = reichsautobahnix} 
+        cost = 10  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for Volkscomputer 
+	focus = { 
 		id = volkscomputer 
 		icon = GFX_goal_generic_radar 
 		ai_will_do = { factor = 45} 
- x =2 
- y =7 
- mutually_exclusive = { } 
- prerequisite = { focus = veteransubsidies} 
- cost = 5  
-  available_if_capitulated = yes  
- }#End of focuses 
+        x = 2 
+        y = 7 
+        mutually_exclusive = { } 
+        prerequisite = { focus = veteransubsidies} 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }     
+#Focus for I think it's fixed now... 
+	focus = { 
+		id = ithinkitsfixednow 
+		icon = GFX_goal_generic_propaganda 
+		ai_will_do = { factor = 45 } 
+        x = 1 
+        y = 8 
+        mutually_exclusive = { } 
+        prerequisite = { } 
+        cost = 5  
+        available_if_capitulated = yes  
+        }
+    }     
+#End of focuses 
 }

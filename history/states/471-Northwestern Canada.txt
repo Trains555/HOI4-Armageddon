@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = CAN
+		owner = USA
 		buildings = {
 			infrastructure = 1
 			10548 = {
@@ -15,6 +15,7 @@ state={
 			}
 		}
 		add_core_of = CAN
+                add_core_of = USA
 	}
 
 	provinces={
